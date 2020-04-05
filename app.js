@@ -27,3 +27,37 @@
 }) ()
 
 
+
+
+
+const cards = document.querySelectorAll('.card')
+const handler =(score)=>{
+        cards.forEach(element => {
+         let values= element.querySelectorAll('.skill__value')
+        
+        values.forEach(value => {
+            let progress = score ? score : (100 - value.getAttribute('data-value'))
+            value.style.transform=`translate3d(-${progress}%,0,0)`
+        })
+        
+    }) 
+}
+
+cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        handler();
+    });
+
+    card.addEventListener('mouseleave', () => {
+        handler(100);
+    });
+})
+
+    
+      
+
+
+
+
+
+
