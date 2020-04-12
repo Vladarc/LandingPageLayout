@@ -6,27 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Source+Sans+Pro:300i,400&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2375532afc.js" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="./css/my-animation.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/2375532afc.js" crossorigin="anonymous"></script>
     <title>Smart</title>
 </head>
 
 <body>
-
-    <header class="section section--gray">
+<header>
+    
         <div class="container">
-            <div class="heading animate" data-mode="fadeInUp">
-                <h1><span class="marked">Smart </span>Agency Landign Page</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni
-                    quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque
-                    rerum aspernatur dolorum at!</p>
-            </div>
-
-
+            <nav class="nav " >
+                <a href="#" class="nav__logo animate" data-mode="fadeInLeft"><span class="marked">S</span>mart</a>
+                
+                    <div class="menu animate" data-mode="fadeInUp">
+                    <input type="checkbox" id="toggle" class="menu__toggle-checkbox">
+                    <label class="menu__toggle-label " for="toggle" >  
+                    <i class="fas fa-align-justify"></i> 
+                    </label>
+                            <ul class="menu__list ul-normalize">
+                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="#working-process" class="menu__link">Working Process</a></li>
+                            <li class="menu__item"><a href="#featured-works" class="menu__link">Featured Works</a></li>
+                            <li class="menu__item"><a href="#services-we-provide" class="menu__link">Services We Provide</a></li>
+                            <li class="menu__item"><a href="#team-chinen-skills" class="menu__link">Team Chinen & Skills</a></li>
+                            <li class="menu__item"><a href="#clients-saids" class="menu__link">Clients Said</a></li>
+                            <li class="menu__item"><a href="#partners" class="menu__link">Partners</a></li>
+                            </ul>
+                </div>
+            </nav>
         </div>
-    </header>
+</header>
+    
     <main>
+        <section class="section section--gray section--bg" style="background-image:url('https://picsum.photos/id/861/2048/1024?grayscale')">
+            <div class="container">
+               
+            
+                <div class="heading animate" data-mode="fadeInUp">
+                    <h1 ><span class="marked">Smart </span>Agency Landign Page</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni
+                        quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque
+                        rerum aspernatur dolorum at!</p>
+                </div>
+                <div class="row row--left">
+                    <div class="col--1-3">
+                        <form action="" method="POST" class="form animate" data-mode="fadeInUp">
+                            <h4 class="form__title"><span class="marked">Send</span> A Message</h4>
+                            <input class="form__field" type="text" name="name" placeholder="Your Name" required >
+                            <input class="form__field" type="email" name="email" placeholder="Your Email" required >
+                            <textarea class="form__field" name="message" placeholder="Your Message" required ></textarea>
+                            <button type="submit" class="btn btn--primary">Send Message
+                                <i class="fas fa-long-arrow-alt-right btn__fa"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
         <section class="section" id="working-process">
             <div class="container">
                 <div class="heading animate" data-mode="fadeInUp">
@@ -414,7 +454,7 @@
             </div>
         </section>
 
-        <section class="section section--gray">
+        <section class="section section--gray" id="partners">
             <div class="container">
                     <h2 hidden>Partners</h2>
                     <ul class="partners  ul-normalize">
@@ -436,6 +476,15 @@
                                 Contact Us
                     </a>
             </div>
+            <div>
+                <ul class="social ul-normalize">
+                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
+                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
+                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
+                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
+                </ul>
+            </div>
+
         </div>
     </footer>
 
