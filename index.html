@@ -9,6 +9,7 @@
    
     <link rel="stylesheet" href="./css/my-animation.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/2375532afc.js" crossorigin="anonymous"></script>
     <title>Smart</title>
@@ -451,6 +452,43 @@
                     <p>Lorem ipsum dolor sit amet consectet ur
                         adipiscing elit Vestibulum bibend um vestibulum.</p>
                 </div>
+                <div class="slider">
+                    <div class="slider__slide">
+                        <div class="row">
+                            <div class="col col--1-2">
+                                <div class="review">
+                                    <div class="review__img-wrap">
+                                    <img src="https://i.picsum.photos/id/1027/100/100.jpg" alt="Photo" class="review__img">
+                                    </div>
+                                    <blockquote class="review__text"></blockquote>
+                                    <ul class="review__stars ul-normalize">
+                                        <li class="review__star"></li>
+                                        <li class="review__star"></li>
+                                        <li class="review__star"></li>
+                                        <li class="review__star"></li>
+                                        <li class="review__star"></li>
+                                    </ul>
+                                    <cite class="review__author"></cite>
+                                </div>
+                            </div>
+                           
+                            <div class="col col--1-2"></div>
+                        </div>
+
+
+
+
+                    </div>
+                    <button class="slider__arrow slider__arrow--prev btn btn--light btn--icon">
+                    <i class="fas fa-chevron-left"></i></button>
+                    <button class="slider__arrow slider__arrow--next btn btn--light btn--icon">
+                    <i class="fas fa-chevron-right"></i></button>
+                    <ul class="slider__dots ul-normalize">
+                        <li ><button class="slider__dot slider__dot--active "></button></li>
+                        <li ><button class="slider__dot"></button></li>
+                        <li ><button class="slider__dot"></button></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -469,20 +507,21 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div>
+            <div class="footer__row">
                     <a href="" class="btn btn--bordered">
                                 Contact Us
                     </a>
             </div>
-            <div>
+            <div class="footer__row">
                 <ul class="social ul-normalize">
-                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
-                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
-                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
-                    <li class="social__item"><a href="" class="social__link btn btn--primary"></a></li>
+                    <li class="social__item"><a href="#" class="social__link btn btn--secondary btn--icon"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link btn btn--secondary btn--icon"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link btn btn--secondary btn--icon"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link btn btn--secondary btn--icon"><i class="fab fa-behance"></i></a></li>
                 </ul>
+                <span class="copyright">© 2015 - 2016 <a href="#" target="_blank">Deviserweb Ltd.</a></span>
             </div>
 
         </div>

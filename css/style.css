@@ -53,7 +53,7 @@ background-color: #fbfbfb;
 .section--bg{
     background-position: center;
     background-repeat: no-repeat;
-    block-size: cover;
+   background-size: cover;
     background-attachment: fixed;
 }
 .heading{
@@ -161,6 +161,17 @@ border-color:#ff5c36;
 color: #fff;
 cursor: pointer;
 }
+.btn--secondary{
+ background-color: #d3d3d3;
+    border-color: #d3d3d3;
+    color: #fff;
+}
+.btn--light{
+background-color: #fff;
+border-color: #ededed;
+color: #191919;
+}
+
 .btn__icon{
 font-size: 2em;
 vertical-align: middle;
@@ -168,6 +179,17 @@ font-weight: 300;
 margin:-5px 1.5rem 0 -1.5rem;
 display: inline-block;
 }
+.btn--icon{
+   padding: 0; 
+   width: 52px;
+   height: 52px;
+   font-size: 2.1rem;
+   line-height: 52px;
+}
+
+
+
+
 .working-item--rotated{
 transform: rotate(-15deg);
 }
@@ -186,6 +208,18 @@ transition: all .3s ease-in;
 .btn:active,
 .btn:focus{
 box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.15);
+}
+.btn--secondary:hover,
+.btn--secondary:active,
+.btn--secondary:focus{
+    background-color: #ff6e47;
+    border-color: #ff6e47;
+}
+.btn--light:hover,
+.btn--light:active,
+.btn--light:focus{
+    background-color: #ff6e47;
+    border-color: #ff6e47;
 }
 .feature-work{
 display: inline-block;
@@ -404,9 +438,30 @@ justify-content: space-around;
 .partner{
 margin:10px;
 }
-footer{
+.footer{
 text-align: center;
 background-color: #f7f7f7;
+padding: 2.5em 0;
+}
+.footer__row{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer__row+.footer__row{
+    margin-top: 2em;
+}
+.copyright{
+    margin-left: 2em;
+}
+.copyright a{
+    text-decoration: none;
+    color: inherit;
+}
+.copyright a:hover,
+.copyright a:active,
+.copyright a:focus{
+color: #ff6e47;
 }
 .form{
 background-color: #fff;
@@ -457,4 +512,40 @@ border-color:#817f7e;
 }
 .form__field:valid{
 border-color:#5ccb0a;
+}
+
+.social__item{
+    display: inline-block;
+}
+.review{
+    border: 1px solid #d3d3d3;
+    transition: .4s ease-in-out;
+    padding: 80px 40px 40px;
+    position: relative;
+    margin: 40px;
+}
+.review__img-wrap{
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+   
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.review__img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 100%;
+    min-width: 100%;
+}
+.review:hover{
+    box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+    border-color: #fff;
 }
