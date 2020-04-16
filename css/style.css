@@ -523,6 +523,9 @@ border-color:#5ccb0a;
     padding: 80px 40px 40px;
     position: relative;
     margin: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
 }
 .review__img-wrap{
     width: 95px;
@@ -548,4 +551,21 @@ border-color:#5ccb0a;
 .review:hover{
     box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
     border-color: #fff;
+}
+.review__stars{
+    color: #ffef3b;
+}
+.review__star{
+    display: inline-block;
+}
+.review__text::before,
+.review__text::after{
+    content: '"';
+}
+[data-starts="0"] .review__star:nth-child(n+1),
+[data-starts="1"] .review__star:nth-child(n+2),
+[data-starts="2"] .review__star:nth-child(n+3),
+[data-starts="3"] .review__star:nth-child(n+4),
+[data-starts="4"] .review__star:nth-child(n+5){
+    color: #d3d3d3;
 }
